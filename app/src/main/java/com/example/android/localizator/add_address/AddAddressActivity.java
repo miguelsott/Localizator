@@ -32,11 +32,13 @@ public class AddAddressActivity extends AppCompatActivity implements AddAddressV
         addAddressPresenter = new AddAddressPresenter(this);
     }
 
+    // Apresenta mensagem de erro no toast no caso de endereço não digitado
     @Override
     public void errorToast() {
         Toast.makeText(AddAddressActivity.this, "Digite o endereço que deseja adicionar", Toast.LENGTH_SHORT).show();
     }
 
+    // Implementação do retorno do endereço inserido
     @Override
     public void result(String address) {
         //retorna o endereço para a MainActivity

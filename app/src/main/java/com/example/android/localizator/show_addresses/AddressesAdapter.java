@@ -54,7 +54,7 @@ public class AddressesAdapter extends RecyclerView.Adapter<AddressesAdapter.View
             ButterKnife.bind(this, itemView); //Binding efetivo com ButterKnife
         }
 
-        // COMENTAR
+        // Listener feito para clique do item individualmente
         @OnClick(R.id.address_item)
         void onItemClick(View view){
             if(onRecyclerViewSelected != null)
@@ -62,7 +62,7 @@ public class AddressesAdapter extends RecyclerView.Adapter<AddressesAdapter.View
         }
     }
 
-    // COMENTAR
+    // OnRecycler setado
     public void setOnRecyclerViewSelected(OnRecyclerViewSelected onRecyclerViewSelected){
         this.onRecyclerViewSelected = onRecyclerViewSelected;
     }
