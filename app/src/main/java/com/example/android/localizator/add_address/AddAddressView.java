@@ -1,7 +1,7 @@
 package com.example.android.localizator.add_address;
 
 /**
- * COMENTAR
+ * Interface do AddAddressActivity e AddAddressPresenter
  */
 
 public interface AddAddressView {
